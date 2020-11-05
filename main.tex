@@ -1,23 +1,27 @@
 \documentclass[stu,12pt]{apa7}
-  \usepackage{times}
-  \usepackage[english]{babel}
-  \usepackage[utf8]{inputenc}
+  \usepackage{times}               % Times New Roman Font Face
+  \usepackage[english]{babel}      % Localization
+  \usepackage[utf8]{inputenc}      % Input Encoding
+  \usepackage{hyperref}            % Hyperlinks
+  \usepackage{enumitem}            % Additional Enumeration Environment Settings
+  \usepackage{geometry}            % Page Layout
+  \usepackage{soul}                % Text Highlighting
+  \usepackage{graphicx}            % Images
+  \usepackage{csquotes}            % Quoting Environment
+  \usepackage{bookmark}            % Required by `csquotes'
+  \usepackage{mdframed}            % Colorful Tex-Box Environment
+  \usepackage[toc]{appendix}       % Appendix
+  \usepackage{fancyhdr}            % Headings and Footers
+  \usepackage[%
+    style=apa,%
+    sortcites=true,%
+    sorting=nyt%
+  ]{biblatex}
   \usepackage{xcolor}
-  \usepackage{hyperref}
-  \usepackage{enumitem}
-  \usepackage{geometry}
-  \usepackage{soul}
-  \usepackage{graphicx}
-  \usepackage{csquotes}
-  \usepackage{bookmark}
-  \usepackage{mdframed}
-  \usepackage[toc]{appendix}
-  % \usepackage[backend=biber,style=apa]{biblatex}
-  \usepackage{fancyhdr}
-  \usepackage{mdframed}
 
   % Bibliography Setup
-  % \addbibresource{main.bib}
+  \DeclareLanguageMapping{english}{english-apa}
+  \addbibresource{main.bib}
 
   % Hyperlink Setup
   \hypersetup{
@@ -96,8 +100,8 @@
           communication skills with your list. Include a minimum of
           \(2\rightarrow 3\) sentences of explanation about each interpersonal
           communication skill and why the skill is important}.
-        \item \textcolor{green}{At the end of your Main Post, add a minimum of
-          three resources which are correctly formatted in accordance with
+        \item \textcolor{green}{At the end of your Main Post, add a minimum
+          of three resources which are correctly formatted in accordance with
           either APA Style or MLA Style (your choice)}.
         \item Read and Comment on the Main post submitted by at least two
           classmates who identified one or more interpersonal communication
@@ -106,11 +110,48 @@
       \end{enumerate}
 
     \newpage
-    \subsection{Introduction}
+    % What Makes an Ideal Interpersonal Communicator
+    \paragraph{Qualities of an Ideal Interpersonal Communicator}
       This is just a simple little placeholder.
+
+    % Two Examples of Good Communicators in Your Life
+    \paragraph{Think of two people you consider to be good interpersonal
+      communicators and explain why each one was chosen}
+      This is just a simple little placeholder.
+
+    % Detailed List of Interpersonal Communication Skills
+    \paragraph{Detailed List of Interpersonal Communication Skills}
+      There are many skills utilized by effective communicators depending on the
+        nature of their interaction with the other(s) in question.
+      \begin{enumerate}
+        \item Communication Skill Title.
+          \begin{itemize}
+            \item Explanation.
+          \end{itemize}
+        \item Communication Skill Title.
+          \begin{itemize}
+            \item Explanation.
+          \end{itemize}
+        \item Communication Skill Title.
+          \begin{itemize}
+            \item Explanation.
+          \end{itemize}
+        \item Communication Skill Title.
+          \begin{itemize}
+            \item Explanation.
+          \end{itemize}
+        \item Communication Skill Title.
+          \begin{itemize}
+            \item Explanation.
+          \end{itemize}
+      \end{enumerate}
 
   % Replies
   % \include{tex/replies.tex}
 
   % Bibliography
+  \nocite{michell_hyde_2012}
+  \printbibliography[%
+    title={Works Cited}%
+  ]
 \end{document}
