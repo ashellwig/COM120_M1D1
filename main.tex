@@ -1,6 +1,6 @@
 \documentclass[stu,12pt]{apa7}
   \usepackage{times}               % Times New Roman Font Face
-  \usepackage[english]{babel}      % Localization
+  \usepackage[american]{babel}      % Localization
   \usepackage[utf8]{inputenc}      % Input Encoding
   \usepackage{hyperref}            % Hyperlinks
   \usepackage{enumitem}            % Additional Enumeration Environment Settings
@@ -20,8 +20,16 @@
   \usepackage{xcolor}
 
   % Bibliography Setup
+  %% Language Mappings
   \DeclareLanguageMapping{english}{english-apa}
+  \DeclareLanguageMapping{american}{american-apa}
+  %% Bibliography File Path
   \addbibresource{main.bib}
+  %% Categories for Specified Bibliography Items
+  %%% Category for sources not referenced in-text
+  \DeclareBibliographyCategory{consulted}
+  \addtocategory{consulted}{noauthor_primer_2012}
+  \addtocategory{consulted}{kondo_developing_2020}
 
   % Hyperlink Setup
   \hypersetup{
@@ -112,37 +120,79 @@
     \newpage
     % What Makes an Ideal Interpersonal Communicator
     \paragraph{Qualities of an Ideal Interpersonal Communicator}
-      This is just a simple little placeholder.
+      I believe that the ideal ``interpersonal communicator'', if such a being
+        exists, has qualities that make someone who one would \textit{want}
+        to go to for advice. Many times, people are afraid of asking for help
+        or advice. More often than not, I feel most people are generally afraid
+        of even describing experience or a situation to others for fear of
+        judgement or someone coming out of the conversation feeling less
+        intelligent or ``smaller'' as a person. The ideal communicator is one
+        who someone can express what they are really thinking and believe with
+        one another in a civilized manner and come out of the conversation
+        with more knowledge than they had when beginning the interaction.
 
     % Two Examples of Good Communicators in Your Life
     \paragraph{Think of two people you consider to be good interpersonal
       communicators and explain why each one was chosen}
-      This is just a simple little placeholder.
+      It is actually suprisingly difficult for me to think of one, let alone
+        two examples of people I believe to be even half-way decent at the
+        ``art'' of communication. Most everyone I know has not yet mastered
+        this life-skill. In the video, it is clear listening is the priority
+        for President Roosevelt throughout the conversation. He does, however,
+        break some of the ``Rules'' described by Celeste Headlee in the Ted Talk
+        shown in this module's exploration component. In that video, she
+        described the act of expressing your pain or relating your own situation
+        to theirs. I find that \emph{most, if not all} people (including myself)
+        do this. After the King's stuttering, the President showed how confident
+        he is with his disability and how little it matters in how the public's
+        \hl{perception} of you changes. In some instances this could be seen as
+        comforting, but in others could be seen as a rude comparison or as
+        putting off a more ``look at me'' attitude.
 
     % Detailed List of Interpersonal Communication Skills
     \paragraph{Detailed List of Interpersonal Communication Skills}
       There are many skills utilized by effective communicators depending on the
-        nature of their interaction with the other(s) in question.
+        nature of their interaction with the other individuals in question.
       \begin{enumerate}
-        \item Communication Skill Title.
+        \item \textit{A Strong Hold on Psychological Context}
           \begin{itemize}
-            \item Explanation.
+            \item \hl{Psychological Context} is maybe not so much an
+              interpersonal communication ``skill'', but rather it is an
+              important concept for one to grasp in order to effectively
+              communicate any message. Interpersonal communication deals with
+              incredibly personal relationships and as such the environment's
+              context needs to be taken into account in order to not prevent
+              the delivery of your message due to the other party being unnerved
+              or too stressed out to effectively understand what you are
+              trying to convey \parencite{noauthor_communication_2013}.
+              Because interpersonal communication concerns all intimate and
+              personal relationships, it is important that the speakers show an
+              understanding of how one-another communicates and adjusts how they
+              speak to best fit the situation.
           \end{itemize}
-        \item Communication Skill Title.
+        \item \textit{%
+          Enter Every Conversation with the intention to understand, rather %
+            than with the intention to reply%
+        }
           \begin{itemize}
-            \item Explanation.
+            \item This skill is important and was described to us in Module
+              1's ``\textit{exploration}'' content. The reason this is important
+              is because, as noted in the next item, \emph{listening} is
+              \textbf{the} most important skill within the realm of
+              interpersonal communication \parencite{headlee_10_2015}. If
+              one person is already conjuring their retort to what the other
+              individual is saying, at that point they have stopped listening.
+              If you are not listening, you cannot understand.
           \end{itemize}
-        \item Communication Skill Title.
+        \item Effectively Utilize Silence
           \begin{itemize}
-            \item Explanation.
-          \end{itemize}
-        \item Communication Skill Title.
-          \begin{itemize}
-            \item Explanation.
-          \end{itemize}
-        \item Communication Skill Title.
-          \begin{itemize}
-            \item Explanation.
+            \item Silence can be situational in its ``\textit{appropriatness}''
+              within a conversation. In some situations, it can help bond the
+              two individuals who are speaking whereas in others it can
+              drive eachother away
+              \parencite[pp. 600]{gerd_antos_handbook_2008}. When appropriate,
+              silence can even be an intimate and comfortable experience, rather
+              than both a repulsive and anxiety-inducing one.
           \end{itemize}
       \end{enumerate}
 
@@ -150,8 +200,20 @@
   % \include{tex/replies.tex}
 
   % Bibliography
-  \nocite{michell_hyde_2012}
+  %% Works Cited
+  \newpage
   \printbibliography[%
-    title={Works Cited}%
+    title={Works Cited},%
+    heading={bibintoc},%
+    notcategory={consulted}%
+  ]
+
+  %% Works Consulted
+  \newpage
+  \nocite{*}
+  \printbibliography[%
+    title={Works Consulted},%
+    heading={bibintoc},%
+    category={consulted}%
   ]
 \end{document}
