@@ -4,7 +4,8 @@
     "[latex]": {
         "editor.formatOnPaste": false,
         "editor.suggestSelection": "recentlyUsedByPrefix",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
     },
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.chktex.path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\chktex.exe",
@@ -102,5 +103,9 @@
         "*.run.xml": true,
         "*.synctex.gz": true,
         "*.lol": true
-    }
+    },
+    "cSpell.words": [
+        "headlee",
+        "stobierski"
+    ]
 }

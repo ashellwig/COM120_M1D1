@@ -42,7 +42,8 @@
 !**/reply*.pdf
 !**/inital_post.html
 !**/reply*.html
-!**/finals/*.html
+!**/out/*.html
+!**/out/*.pdf
 
 # Javascript
 **/node_modules/**
